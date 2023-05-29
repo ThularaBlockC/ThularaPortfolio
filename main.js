@@ -1,4 +1,3 @@
-const canvas = document.querySelector("#canvas canvas");
 const c = canvas.getContext("2d");
 
 window.addEventListener("resize", resizeCanvas, false);
