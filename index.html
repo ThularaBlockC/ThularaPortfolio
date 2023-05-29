@@ -1,0 +1,567 @@
+<style>
+  :root {
+    --size: 200px;
+    --blue: #000000;
+    --lb: rgba(0, 0, 0, 0.5);
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    display: block;
+
+    /* position: absolute; */
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  #contactBackground {
+    position: absolute;
+    height: 5%;
+    width: 5%;
+    border: 2px solid rgb(255, 255, 255);
+  }
+
+  #contactBackground:hover {
+    border: 2px solid red;
+    transform: scale(1.5);
+  }
+
+  #contact {
+    position: absolute;
+    height: 15%;
+    top: 10%;
+    left: 90%;
+    width: 10%;
+    background-size: 10%, 10%;
+  }
+
+  #paper {
+    position: absolute;
+    height: 1%;
+    top: 3%;
+    left: 76%;
+    width: 2%;
+    background-size: 5%, 5%;
+  }
+  #paperBackground {
+    position: absolute;
+    height: 1%;
+    top: 3%;
+    left: 76%;
+    width: 2%;
+    background-size: 5%, 5%;
+    border: 1px solid rgba(255, 255, 255, 0.406);
+  }
+  #paperBackground:hover {
+    border: 2px solid red;
+    transform: scale(1.5);
+  }
+
+  #paperOne {
+    position: absolute;
+    height: 1%;
+    top: 5%;
+    left: 76%;
+    width: 2%;
+    background-size: 5%, 5%;
+  }
+  #paperOneBackground {
+    position: absolute;
+    height: 1%;
+    top: 5%;
+    left: 76%;
+    width: 2%;
+    background-size: 5%, 5%;
+    border: 1px solid rgba(255, 255, 255, 0.406);
+  }
+  #paperOneBackground:hover {
+    border: 2px solid red;
+    transform: scale(1.5);
+  }
+
+  #paperTwo {
+    position: absolute;
+    height: 1%;
+    top: 7%;
+    left: 76%;
+    width: 2%;
+    background-size: 5%, 5%;
+  }
+  #paperTwoBackground {
+    position: absolute;
+    height: 1%;
+    top: 7%;
+    left: 76%;
+    width: 2%;
+    background-size: 5%, 5%;
+    border: 1px solid rgba(255, 255, 255, 0.406);
+  }
+  #paperTwoBackground:hover {
+    border: 2px solid red;
+    transform: scale(1.5);
+    /* transition-delay:1s; */
+  }
+
+  #paperThree {
+    position: absolute;
+    height: 1%;
+    top: 9%;
+    left: 76%;
+    width: 2%;
+    background-size: 5%, 5%;
+  }
+  #paperThreeBackground {
+    position: absolute;
+    height: 1%;
+    top: 9%;
+    left: 76%;
+    width: 2%;
+    background-size: 5%, 5%;
+    border: 1px solid rgba(255, 255, 255, 0.406);
+  }
+  #paperThreeBackground:hover {
+    border: 2px solid red;
+    transform: scale(1.5);
+    /* transition-delay:1s; */
+  }
+
+  #paperFour {
+    position: absolute;
+    height: 1%;
+    top: 11%;
+    left: 76%;
+    width: 2%;
+    background-size: 5%, 5%;
+  }
+  #paperFourBackground {
+    position: absolute;
+    height: 1%;
+    top: 11%;
+    left: 76%;
+    width: 2%;
+    background-size: 5%, 5%;
+    border: 1px solid rgba(255, 255, 255, 0.406);
+  }
+  #paperFourBackground:hover {
+    border: 2px solid red;
+    transform: scale(1.5);
+    /* transition-delay:1s; */
+  }
+  #github {
+    position: absolute;
+    height: 1%;
+    top: 3%;
+    left: 79%;
+    width: 2%;
+    background-size: 5%, 5%;
+  }
+  #githubBackground {
+    position: absolute;
+    height: 1%;
+    top: 3%;
+    left: 79%;
+    width: 2%;
+    background-size: 5%, 5%;
+    border: 1px solid rgba(255, 255, 255, 0.406);
+  }
+  #githubBackground:hover {
+    border: 2px solid red;
+    transform: scale(1.5);
+  }
+
+  #linkdin {
+    position: absolute;
+    height: 1%;
+    top: 5%;
+    left: 79%;
+    width: 2%;
+    background-size: 5%, 5%;
+  }
+  #linkdinBackground {
+    position: absolute;
+    height: 1%;
+    top: 5%;
+    left: 79%;
+    width: 2%;
+    background-size: 5%, 5%;
+    border: 1px solid rgba(255, 255, 255, 0.406);
+  }
+  #linkdinBackground:hover {
+    border: 2px solid red;
+    transform: scale(1.5);
+  }
+
+  #instagram {
+    position: absolute;
+    height: 1%;
+    top: 7%;
+    left: 79%;
+    width: 2%;
+    background-size: 5%, 5%;
+  }
+  #instagramBackground {
+    position: absolute;
+    height: 1%;
+    top: 7%;
+    left: 79%;
+    width: 2%;
+    background-size: 5%, 5%;
+    border: 1px solid rgba(255, 255, 255, 0.406);
+  }
+  #instagramBackground:hover {
+    border: 2px solid red;
+    transform: scale(1.5);
+    /* transition-delay:1s; */
+  }
+
+  #facebook {
+    position: absolute;
+    height: 1%;
+    top: 9%;
+    left: 79%;
+    width: 2%;
+    background-size: 5%, 5%;
+  }
+  #facebookBackground {
+    position: absolute;
+    height: 1%;
+    top: 9%;
+    left: 79%;
+    width: 2%;
+    background-size: 5%, 5%;
+    border: 1px solid rgba(255, 255, 255, 0.406);
+  }
+  #facebookBackground:hover {
+    border: 2px solid red;
+    transform: scale(1.5);
+    /* transition-delay:1s; */
+  }
+  
+  #email {
+    position: absolute;
+    height: 1%;
+    top: 11%;
+    left: 79%;
+    width: 2%;
+    background-size: 5%, 5%;
+  }
+  #emailBackground {
+    position: absolute;
+    height: 1%;
+    top: 11%;
+    left: 79%;
+    width: 2%;
+    background-size: 5%, 5%;
+    border: 1px solid rgba(255, 255, 255, 0.406);
+  }
+  #emailBackground:hover {
+    border: 2px solid red;
+    transform: scale(1.5);
+    /* transition-delay:1s; */
+  }
+
+  #lookkie {
+    position: absolute;
+    height: 1%;
+    top: 3%;
+    left: 82%;
+    width: 2%;
+    background-size: 5%, 5%;
+  }
+  #lookkieBackground {
+    position: absolute;
+    height: 1%;
+    top: 3%;
+    left: 82%;
+    width: 2%;
+    background-size: 5%, 5%;
+    border: 1px solid rgba(255, 255, 255, 0.406);
+  }
+  #lookkieBackground:hover {
+    border: 2px solid red;
+    transform: scale(1.5);
+    /* transition-delay:1s; */
+  }
+
+  #gpt {
+    position: absolute;
+    height: 1%;
+    top: 5%;
+    left: 82%;
+    width: 2%;
+    background-size: 5%, 5%;
+  }
+  #gptBackground {
+    position: absolute;
+    height: 1%;
+    top: 5%;
+    left: 82%;
+    width: 2%;
+    background-size: 5%, 5%;
+    border: 1px solid rgba(255, 255, 255, 0.406);
+  }
+  #gptBackground:hover {
+    border: 2px solid red;
+    transform: scale(1.5);
+  }
+
+  #removals {
+    position: absolute;
+    height: 1%;
+    top: 7%;
+    left: 82%;
+    width: 2%;
+    background-size: 5%, 5%;
+  }
+  #removalsBackground {
+    position: absolute;
+    height: 1%;
+    top: 7%;
+    left: 82%;
+    width: 2%;
+    background-size: 5%, 5%;
+    border: 1px solid rgba(255, 255, 255, 0.406);
+  }
+  #removalsBackground:hover {
+    border: 2px solid red;
+    transform: scale(1.5);
+    /* transition-delay:1s; */
+  }
+
+  #orderOnline {
+    position: absolute;
+    height: 1%;
+    top: 9%;
+    left: 82%;
+    width: 2%;
+    background-size: 5%, 5%;
+  }
+  #orderOnlineBackground {
+    position: absolute;
+    height: 1%;
+    top: 9%;
+    left: 82%;
+    width: 2%;
+    background-size: 5%, 5%;
+    border: 1px solid rgba(255, 255, 255, 0.406);
+  }
+  #orderOnlineBackground:hover {
+    border: 2px solid red;
+    transform: scale(1.5);
+    /* transition-delay:1s; */
+  }
+  #photography {
+    position: absolute;
+    height: 1%;
+    top: 11%;
+    left: 82%;
+    width: 2%;
+    background-size: 5%, 5%;
+  }
+  #photographyBackground {
+    position: absolute;
+    height: 1%;
+    top: 11%;
+    left: 82%;
+    width: 2%;
+    background-size: 5%, 5%;
+    border: 1px solid rgba(255, 255, 255, 0.406);
+  }
+  #photographyBackground:hover {
+    border: 2px solid red;
+    transform: scale(1.5);
+    /* transition-delay:1s; */
+  }
+
+  #canvas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+
+#group {
+    position: absolute;
+    display: flex;
+  /* flex-flow: row wrap;
+  align-items: center; */
+    height: 50px;
+    width: 100px;
+    top: 75%;
+    left: 100%;
+
+    /* background-size: 5%, 5%; */
+    /* margin-left: 10px; */
+  }
+
+  #left{
+    /* margin-left: 10px; */
+   position: absolute;
+   /* align-items: center;
+   justify-content: center; */
+    height: 2%;
+    top: 95%;
+    left: 40%;
+    width: 5%;
+    background-size: 5%, 5%;
+   background-color: #47606162;
+  }
+  #left:hover {
+    color: #ffffff;
+    background-color: #476061;
+}
+
+  #jump {
+    /* margin-left: 10px; */
+   position: absolute;
+    height: 2%;
+    top: 95%;
+    left: 50%;
+    width: 5%;
+    background-size: 5%, 5%;
+   background-color: #47606162;
+  }
+  #jump:hover {
+    color: #ffffff;
+    background-color: #476061;
+}
+
+  #right {
+   /* margin-left: 10px; */
+   /* display: hidden; */
+   position: absolute;
+    height: 2%;
+    top: 95%;
+    left: 60%;
+    width: 5%;
+    background-size: 5%, 5%;
+    color: #000000;
+   background-color: #47606162;
+  }
+  #right:hover {
+    color: #ffffff;
+    background-color: #476061;
+}
+@media only screen and (max-width: 2000px) and (min-width: 985px) {
+  #right,#jump,#left{
+        display:none;
+    }
+}
+
+</style>
+
+<title>Thulara Hewage</title>
+<link rel="apple-touch-icon" sizes="180x180" href="./images/favicon_io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon_io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./images/favicon_io/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<div id="canvas">
+  <canvas></canvas>
+</div>
+
+
+<span class="paper">
+  <a href="http://www.jocm.us/index.php?m=content&c=index&a=show&catid=187&id=1188" target="_blank">
+    <img id="paperBackground" src="" alt="Research paper" title="Published research paper" />
+  </a>
+</span>
+
+<span class="paperOne">
+  <a href="https://www.semanticscholar.org/paper/Review%3A-Big-Data-Techniques-of-Google%2C-Amazon%2C-and-Hewage-Halgamuge/0bd35260f53a4ea997b4e8c1284f209c91581c9a#citing-papers" target="_blank">
+    <img id="paperOneBackground" src="" alt="Other published links to the same paper" title="Other published links to the same paper" />
+  </a>
+</span>
+<span class="paperTwo">
+  <a href="https://researchoutput.csu.edu.au/en/publications/review-big-data-techniques-of-google-amazon-facebook-and-twitter" target="_blank">
+    <img id="paperTwoBackground" src="" alt="CSU published link" title="CSU published link" />
+  </a>
+</span>
+<span class="paperThree">
+  <a href="https://www.researchgate.net/publication/323588192_Review_Big_Data_Techniques_of_Google_Amazon_Facebook_and_Twitter" target="_blank">
+    <img id="paperThreeBackground" src="" alt="Researchgate published link" title="Researchgate published link" />
+  </a>
+</span>
+<span class="paperFour">
+  <a href="https://dblp.org/pid/216/8587.html"target="_blank">
+    <img id="paperFourBackground" src="" alt="dplp published link" title="dplp published link"/>
+  </a>
+</span>
+
+<span class="github">
+  <a href="https://github.com/ThularaBlockC" target="_blank">
+    <img id="githubBackground" src="" alt="github" title="github"/>
+  </a>
+</span>
+
+<span class="linkdin">
+  <a href="https://www.linkedin.com/in/thulara-hewage-82598244/" target="_blank">
+    <img id="linkdinBackground" src="" alt="linkdin" title="linkdin"/>
+  </a>
+</span>
+
+<span class="facebook">
+  <a href="https://www.facebook.com/thulara.hewage" target="_blank">
+    <img id="facebookBackground" src="" alt="facebook" title="facebook" />
+  </a>
+</span>
+
+<span class="instagram">
+  <a href="https://www.instagram.com/thulara_hewage/" target="_blank">
+    <img id="instagramBackground" src="" alt="instagram" title="instagram" />
+  </a>
+</span>
+
+<span class="email">
+  <a href="mailto:thulara.hewage@gmail.com" target="_blank">
+    <img id="emailBackground" src="" alt="Let's talk: thulara.hewahe@gmail.com" title="Let's talk: thulara.hewahe@gmail.com"/>
+  </a>
+</span>
+
+<span class="lookkie">
+  <a href="https://lookkie.com/" target="_blank">
+    <img id="lookkieBackground" src="" alt="Lookkie" title="Lookkie"/>
+  </a>
+</span>
+
+<span class="gpt">
+  <a href="https://gptwork.vercel.app/" target="_blank">
+    <img id="gptBackground" src="" alt="Chat Gpt" title="Chat Gpt" />
+  </a>
+</span>
+
+<span class="removals">
+  <a href="https://removalsbyalaski.com.au/" target="_blank">
+    <img id="removalsBackground" src="" alt="Removals and Movers in Melbourne" title="Removals and Movers in Melbourne" />
+  </a>
+</span>
+
+<span class="orderOnline">
+  <a href="https://brentleyevents.com/?v=6cc98ba2045f" target="_blank">
+    <img id="orderOnlineBackground" src="" alt="Online ordering for your party decorations" title="Online ordering for your party decorations" />
+  </a>
+</span>
+
+<span class="photography">
+  <a href="https://tharapremarathna.com/" target="_blank">
+    <img id="photographyBackground" src="" alt="Photography and editing" title="Photography and editing" />
+  </a>
+</span>
+
+<button id="left" ontouchmove="moveleft()" touchend="clearmove()"><
+</button>
+
+<button id="jump" ontouchmove="jump()" touchend="clearmove()">^
+</button>
+
+<button id="right" ontouchmove="moveright()" touchend="clearmove()">>
+</button>
+
+  <script src="./extra/other.js"></script>
+  <script src="./extra/data/collisions.js"></script>
+  <script src="./extra/classes/Sprite.js"></script>
+  <script src="./extra/classes/Player.js"></script>
+  <script src="./extra/classes/CollisionBox.js"></script>
+  <script src="main.js"></script>
